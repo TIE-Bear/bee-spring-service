@@ -50,7 +50,7 @@ public class SimpleMessageCorrector implements MessageCorrector {
     private Integer correctOperAttrForOperTypex2(Integer curOperAttr) {
         Integer resultOperAttr = null;
         if (curOperAttr > 0 && curOperAttr < 5) {
-            resultOperAttr = 57;
+            resultOperAttr = 4;
         } else if (curOperAttr > 5) {
             resultOperAttr = 9;
         } else if (curOperAttr == 0) {
