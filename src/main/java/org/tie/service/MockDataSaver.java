@@ -14,6 +14,6 @@ public class MockDataSaver implements DataSaver{
 
     @Override
     public void saveMessage(Message message) {
-        log.info("Next message is recorded: {}", message.toString());
+        log.info("Next message is recorded: \n\t\t{}", message.toString());
     }
 }
