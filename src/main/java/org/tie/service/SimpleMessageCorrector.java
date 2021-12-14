@@ -53,8 +53,12 @@ public class SimpleMessageCorrector implements MessageCorrector {
             resultOperAttr = 57;
         } else if (curOperAttr > 5) {
             resultOperAttr = 9;
+        } else if (curOperAttr == 0) {
+            resultOperAttr = 10;
+        } else if (curOperAttr == 10) {
+            resultOperAttr = 11;
         } else {
-            resultOperAttr = 0;
+            //TODO TP-11: Пока не ясно как обрабатывать, а в прод надо. Добавить, когда уточненят.
         }
         return resultOperAttr;
     }
